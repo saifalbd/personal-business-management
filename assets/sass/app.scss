@@ -1,0 +1,138 @@
+@import '_layouts';
+
+@import '_customModel';
+@import '_customTiles';
+@import '_numberZoomDialog';
+@import '_options';
+@import '_colors';
+@import '_requestForm';
+@import '_overwrite';
+@import "_loader";
+
+
+
+
+.mini-input{
+  $divi : 1.3;
+
+  padding:2px (2px / $divi );
+  &:first-child{
+    padding-left: 10px;
+  }
+  &:last-child{
+    padding-right: 10px;
+  }
+
+  p{
+    font-size: (1rem /($divi*0.9));
+    text-align: center;
+  }
+  label.select,.input{
+    border-radius:( 20px /$divi);
+
+  }
+  label.select {
+
+    font-size:( 1rem / $divi );
+    height:( 36px / $divi );
+    line-height:( 36px / $divi );
+    .select-input{
+
+      height:( 34px / $divi );
+      padding-left:( 10px / $divi );
+      font-size:( 1rem / $divi );
+      height:( 36px / $divi );
+      line-height:( 36px / $divi );
+      .icon{
+        display: none;}
+    }
+   &.dropdown-toggle::before{
+     margin-left:( -.9rem / $divi );
+     left:100%;
+     top:( 14px / $divi );
+     height:( .3125rem /  $divi );
+     width:( .3125rem / $divi );
+   }
+
+    .drop-container{
+      .d-menu{
+        li{
+          a{
+            padding: 0 (0.5rem /$divi ) 0 (0.5rem /$divi);
+            line-height:( 32px /$divi);
+            height: ( 32px /$divi);
+            font-size:( 1rem / $divi );
+            .icon{
+              top:( 50% / $divi );
+              width:( 1.2rem / $divi );
+              height:( 1.2rem / $divi );
+              font-size:( 1.2rem / $divi );
+              left:( .5rem /$divi);
+              display: none;
+              margin-top:( -.6rem /$divi);
+              &::before{
+                line-height:( 1.2rem $divi);
+              }
+
+            }
+          }
+        }
+      }
+    }
+  }
+  .input{
+    font-size:( 1rem / $divi );
+    height:( 36px / $divi );
+    line-height:( 36px / $divi );
+
+
+    input {
+      border-radius:( 20px /$divi);
+      line-height:( 36px / $divi );
+      height:( 35px / $divi );
+      padding:0 ( .5rem / $divi );
+      font: 400 (15.3333px / $divi ) Arial;
+    }
+    .button-group{
+      display: none;
+      button{
+       &.button{
+         border: 1px solid transparent;
+         padding:0 ( .75rem / $divi );
+         font-size:( .875rem /$divi);
+         line-height:( 34px / $divi);
+       }
+
+        [class*=default-icon]{
+
+          height:( 16px / $divi);
+          width:( 16px / $divi);
+          display: none;
+
+        }
+      }
+    }
+    .prepend{
+      padding:(.5rem / ($divi))( .75rem / ($divi*2));
+      line-height:( 1.25rem / $divi );
+    }
+.button{
+  height:( 34px / $divi );
+  min-width:( 34px / $divi);
+}
+  }
+  >button.button{
+    padding:0 ( .75rem / $divi );
+    font-size:( .875rem /$divi);
+    line-height:( 34px / $divi);
+    height:( 36px / $divi );
+  }
+}
+
+.fix-rate-btn-box{
+  position: fixed;
+  top: 70px;
+  right: 0;
+  background-color: black;
+  padding:5px 10px;
+}

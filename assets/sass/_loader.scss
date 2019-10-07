@@ -1,0 +1,18 @@
+.overlay{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+  flex-direction: column;
+ &.loader-back-fixed{
+    background-color: #0a1520;
+
+   }
+ &.loader-back-relative{
+  background-color: #0a1520;
+  position: relative;
+
+ }
+ .wait-text{
+  color: chartreuse;
+ }
+}

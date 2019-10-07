@@ -1,0 +1,53 @@
+.dialog{
+.button.square.closer.js-dialog-close{display: none;}
+
+.dialog-content{
+.number-confirm-cell{
+	text-align: center;
+	font-size: 60px;
+	font-weight: bolder;
+
+}
+
+.number-zoom-cell{
+	background: #2b0b63;
+	color: #fff;
+	padding-bottom: 10px;
+	$isSize : 90px;
+	
+
+	.input{
+		height:$isSize;
+		line-height:$isSize - 10px;
+		input{
+			height:$isSize - 2px;
+			font-size:$isSize - 10px;
+			font-weight: bold;
+
+background-color: #000000;
+    color: #b292d0;
+			
+&.inVaild{background: red; color: blue;}	
+		}
+		.button{
+			height:$isSize;
+		}
+	&:focus-within {
+  
+  
+  input{
+  background: #000108;
+  color: gold;
+  &.inVaild{background: red; color: blue;}
+  }
+  .button{
+  	background: #000108;
+  	color: gold;
+  }
+}
+	}
+}
+
+}
+
+}

@@ -1,0 +1,18 @@
+@component('tables.invoicePdf.infoTable',compact('info'))
+@endcomponent
+@component('tables.invoicePdf.orderTable',compact('info'))
+@endcomponent
+@if($info->canCustomer)
+    @component('tables.invoicePdf.dueTable',compact('info'))
+    @endcomponent
+    @component('tables.invoicePdf.paidTable',compact('info'))
+    @endcomponent
+@endif
+@if($info->canvendor)
+    @component('tables.invoicePdf.debitTable',compact('info'))
+    @endcomponent
+    @component('tables.invoicePdf.creditTable',compact('info'))
+    @endcomponent
+@endif
+@component('tables.invoicePdf.resultTable',compact('info'))
+@endcomponent

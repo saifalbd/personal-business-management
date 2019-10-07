@@ -1,0 +1,134 @@
+
+%main-bg {
+background-color:#210651;
+color: #fff;
+}
+%primary-bg{
+background-color: #1D0029;
+color: #fff;
+}
+
+%info-bg{
+background-color:#210651;
+color: #fff;
+}
+
+/*
+%main-bg {
+background-color:#210651;
+color: #fff;
+}
+%primary-bg{
+background-color: #000000;
+color: #fff;
+}
+
+%info-bg{
+background-color:#210651;
+color: #fff;
+}
+*/
+.default-layout{
+	@extend %info-bg;
+	min-height: 100vh;
+	
+	.app-bar.app-bar-expand{
+		@extend %primary-bg;
+	}
+	article{
+	@extend %info-bg;
+	}
+	main aside ul.v-menu{
+		@extend %primary-bg;
+
+     	    li.menu-title{
+     	    	@extend %info-bg;
+     	    	font-size: 15px;
+     	    }
+     	    li:not(.menu-title){
+     	    	a{font-size: 15px; height: 40px;
+     	    	 }
+     	    	&:hover{
+     	    		background-color:rgba(0, 255, 0, 0.08);
+     	    	};
+     	    } 
+	}
+	.custom-tiles-grid{
+		
+		.custom-tile{
+			background-color: #fff;
+			.title-bar,.value-bar{
+				background: #000;
+			}
+		}
+		.custom-tile-hori{
+			background-color: #fff;
+			border: 1px solid #000;
+		}
+	}
+	
+.pagination-box{
+	@extend %primary-bg;
+}
+table{
+	@extend %primary-bg;
+	a{color:#46f565;}
+	a:link{
+		color:#03ff8d;
+
+	};
+tbody{
+td .button{
+@extend %primary-bg;
+padding-bottom: 2px;
+border:2px solid #FFEB3B;
+}
+.d-menu{
+@extend %primary-bg;
+li:hover{
+@extend %info-bg;
+};
+}	
+}
+
+	 .filterTr{
+	 	background-color: #3c0146;
+	 	p{
+	 		color: #ffff;
+	 	}
+	 }
+	.titleTr{
+		th{
+			@extend %main-bg;
+			&.sort-asc,&.sort-desc{
+				@extend %primary-bg;
+				&:after{
+					color:#FFEB3B;
+				};
+			}
+		}
+		
+	}
+tfoot{
+	background-color: #CDDC39;
+}
+}
+.pageTitleBox{
+	@extend %info-bg;
+}
+.deshboard{
+	@extend %primary-bg;
+	.tiles-parent-title{
+	@extend %info-bg;	
+	}
+}
+.options{
+	@extend %primary-bg;
+}
+.addRemoveForm{
+	@extend %primary-bg;
+}
+.requestForm{
+	@extend %primary-bg;
+}
+}

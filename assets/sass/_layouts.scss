@@ -1,0 +1,58 @@
+$asideSize : 250px;
+
+ body{
+      background-color: #e9ebee;
+    }
+
+main{
+
+ 	aside{
+      margin-top: 52px;
+      width: $asideSize;
+     position: fixed;
+     height: calc(100vh - 52px);
+     overflow: auto;
+     top: 0;
+     table{
+        display: none;
+     }
+     ul.v-menu{
+
+     	    li.menu-title{
+
+     	    	font-size: 15px;
+     	    }
+     	    li:not(.menu-title){
+     	    	a{font-size: 15px; height: 40px;}
+     	    	&:hover{
+
+     	    	};
+     	    }
+     }
+      }
+	 article{
+	       margin-top: 52px;
+	       background: #ffff;
+	       margin-left: $asideSize;
+	   }
+.rowInfo{
+    margin-top: 10px;
+    .cell-6{
+        border: 1px solid #ffff;
+        &:nth-child(odd){
+            background-color: #000;
+        };
+    }
+    }
+
+    .showRate{
+      position: fixed;
+      left:0;
+      min-width: 200px;
+      max-width: calc(100% - 200px);
+      background: black;
+      top: 0;
+      z-index: 1500;
+      overflow-y: auto;
+    }
+}

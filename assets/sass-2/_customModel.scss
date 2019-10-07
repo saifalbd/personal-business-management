@@ -1,0 +1,17 @@
+.model-container{
+	position: fixed;
+	display: none;;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background: black;
+	z-index: 10000;
+	
+	justify-content: center;
+	align-items:flex-start;
+	.window{
+		width: 500px;
+		min-height: 300px;
+	}
+}

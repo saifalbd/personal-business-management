@@ -1,0 +1,13 @@
+<?php
+
+namespace DummyNamespace;
+
+//php artisan make:trait MyTrait 
+//command
+trait DummyClass
+{
+   public function dammyfuntion()
+   {
+   	
+   }
+}
